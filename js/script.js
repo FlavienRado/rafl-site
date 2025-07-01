@@ -196,7 +196,7 @@ const observer = new IntersectionObserver((entries) => {
 observer.observe(aboutSection);
 
 // Données des témoignages
-const testimonialsData = [
+/**const testimonialsData = [
     {
         content: 'Le RaFl a complètement transformé notre présence en ligne. Son approche professionnelle a abouti à un site qui a augmenté nos conversions de 40%.',
         author: 'Sarah D.',
@@ -215,10 +215,10 @@ const testimonialsData = [
         role: 'Responsable Marketing, Société 123',
         image: 'testimonial3.jpg'
     }
-];
+];**/
 
 // Générer les témoignages (pour un slider)
-const testimonialsSlider = document.querySelector('.testimonials-slider');
+/** const testimonialsSlider = document.querySelector('.testimonials-slider');
 testimonialsData.forEach(testimonial => {
     const testimonialElement = document.createElement('div');
     testimonialElement.className = 'testimonial';
@@ -237,19 +237,33 @@ testimonialsData.forEach(testimonial => {
         </div>
     `;
     testimonialsSlider.appendChild(testimonialElement);
-});
+});**/
 
 // Formulaire de contact
 const contactForm = document.getElementById('contact-form');
 contactForm.addEventListener('submit', function(e) {
+    // Pour Netlify Forms, il suffit de laisser le navigateur gérer l'envoi.
+    // Mais pour afficher un message sans recharger la page :
     e.preventDefault();
-    
-    // Ici vous pouvez ajouter le code pour envoyer le formulaire
-    // Par exemple avec fetch() ou en le soumettant à un serveur
-    
-    // Simulation d'envoi réussi
-    alert('Message envoyé avec succès! Je vous répondrai dès que possible.');
-    contactForm.reset();
+
+    const formData = new FormData(contactForm);
+
+    fetch('/', {
+        method: 'POST',
+        headers: { 'Accept': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Message envoyé avec succès! Je vous répondrai dès que possible.');
+            contactForm.reset();
+        } else {
+            alert('Une erreur est survenue. Veuillez réessayer plus tard.');
+        }
+    })
+    .catch(() => {
+        alert('Une erreur est survenue. Veuillez réessayer plus tard.');
+    });
 });
 
 // Mettre à jour l'année dans le footer
