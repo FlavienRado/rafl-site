@@ -1,45 +1,179 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RaFl - Créatif Multiservices</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaFl | Freelance Digital Créatif</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-      <h1>RaFl</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="about.html">À propos</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-        </ul>
-      </nav>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.png" alt=" RaFl" class="logo-img">
+                    <span class="logo-text">RaFl</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <h2>Bienvenue sur RaFl</h2>
-        <p>L’univers créatif de Rakotondranivo Flavien.<br>
-        Je combine technique, design et passion pour donner vie à des projets uniques : photomanipulations, applications mobiles, sites web, et plus encore.</p>
-      </section>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transformez vos idées en <span>réalité digitale</span></h1>
+                <p class="hero-subtitle">Je combine technique, design et passion pour donner vie à des projets uniques : photomanipulations, applications mobiles, sites web, et plus encore.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn btn-primary">Voir mes réalisations</a>
+                    <a href="#contact" class="btn btn-secondary">Discutons de votre projet</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <section class="cta">
-        <a href="portfolio.html" class="btn">Voir mes projets</a>
-      </section>
-    </main>
-    <footer style="text-align: center; margin-top: 50px; padding: 20px; background-color: #f0f8ff;">
-  <p>📬 Me contacter :</p>
-  <p>
-    <a href="mailto:flavienrado@email.com">Email</a> |
-    <a href="https://wa.me/261347800068" target="_blank">WhatsApp</a> 
-     <a href="https://www.facebook.com/in/flavienrado" target="_blank">Facebook</a>|
-    <a href="https://www.linkedin.com/in/flavienrado" target="_blank">LinkedIn</a>
-  </p>
-  <p style="font-size: 0.8em; color: #777;">© 2025 RaFl. Tous droits réservés.</p>
-</footer>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Mes Services</h2>
+            <div class="services-grid">
+                <!-- Les cartes de services seront générées par JavaScript -->
+            </div>
+        </div>
+    </section>
 
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Mes Réalisations</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">Apps</button>
+                <button class="filter-btn" data-filter="photomanipulation">Photomanipulation</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Les éléments du portfolio seront générés par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">À Propos</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="assets/images/profile.jpg" alt="Le RaFl" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <h3> <strong class="colored-text">RAFL</strong> : mon Univers de Création; de l’idée à la réalisation.</h3>
+                    <p>Je suis Rakotondranivo Flavien, passionné par l’imagerie médicale, le design et la technologie.
+                        Manipulateur radio de formation, j’ai élargi mes compétences à la photomanipulation, au développement mobile et à la création de sites web.
+                        J’aime créer, expérimenter et apprendre en continue . Chaque projet est une opportunité d’exprimer ma créativité tout en apportant des solutions concrètes.</p>
+                    <div class="skills">
+                        <!-- Les compétences seront générées par JavaScript -->
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Travaillons ensemble</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Témoignages</h2>
+            <div class="testimonials-slider">
+                <!-- Les témoignages seront générés par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-moi</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Parlons de votre projet</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Paris, France</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contact@lerafl.com">contact@lerafl.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo/logo-white.svg" alt="Le RaFl" class="logo-img">
+                    <span class="logo-text">Le RaFl</span>
+                </div>
+                <p>Solutions digitales sur mesure pour propulser votre business</p>
+                <ul class="footer-links">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> Le RaFl. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
