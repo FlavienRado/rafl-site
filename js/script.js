@@ -152,7 +152,7 @@ filterBtns.forEach(btn => {
 const skillsData = [
     { name: 'Développement Web', level: 75 },
     { name: 'Photomanipulation', level: 70 },
-    { name: 'Flutter/Kotlin', level: 45 }
+    { name: 'Développement Mobile', level: 45 }
     
 ];
 
