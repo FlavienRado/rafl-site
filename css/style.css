@@ -389,6 +389,8 @@ h1, h2, h3, h4 {
     border-radius: var(--radius);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
+     width: 80%;
+
 }
 
 .about-img img {
@@ -729,4 +731,8 @@ h1, h2, h3, h4 {
 .colored-text {
     color: #7c3aed;
     font-size: 3rem;     
+}
+.colored-text-link {
+    color: #7c3aed;
+    font-size: 1.5rem;     
 }
