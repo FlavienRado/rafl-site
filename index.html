@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RaFl | Freelance Digital Créatif</title>
-    <meta name="description" content="RAFL est un site web créer par rakotondranivo flavien pour ses creation digital basé à Madagascar. Je crée des sites web, applications mobiles, designs créatifs  pour transformer vos idées en succès en ligne">
-    <meta name="keywords" content="freelance, digital, créatif, web design, développement web, applications mobiles, photomanipulation, Madagascar">
+    
+    <!-- Title optimisé -->
+    <title>RAFL – Création digitale et solutions web à Madagascar</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="RAFL est un site holding digital créé par Rakotondranivo Flavien à Madagascar. Sites web, applications mobiles, design graphique  pour booster votre business.">
+    <meta name="keywords" content="RAFL, site holding digital, Madagascar, création site web, développement web, applications mobiles, design graphique, photomanipulation">
     <meta name="author" content="Rakotondranivo Flavien">
+
+    <!-- Open Graph pour réseaux sociaux -->
+    <meta property="og:title" content="RAFL – Création digitale et solutions web à Madagascar">
+    <meta property="og:description" content="RAFL transforme vos idées en projets digitaux réussis : sites web, apps, design  à Madagascar.">
+    <meta property="og:image" content="https://rafl-site.netlify.app/assets/images/logo.png">
+    <meta property="og:url" content="https://rafl-site.netlify.app">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,9 +30,9 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">
-                    <img src="assets/images/logo.png" alt=" RaFl" class="logo-img">
+            <nav class="navbar" aria-label="Navigation principale">
+                <a href="#hero" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo RAFL – Création digitale" class="logo-img">
                     <span class="logo-text">RaFl</span>
                 </a>
                 <ul class="nav-links">
@@ -26,11 +42,11 @@
                     <li><a href="#about">À propos</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
+                <button class="hamburger" aria-label="Ouvrir le menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </nav>
         </div>
     </header>
@@ -40,7 +56,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Transformez vos idées en <span>réalité digitale</span></h1>
-                <p class="hero-subtitle">Je combine technique, design et passion pour donner vie à des projets uniques : photomanipulations, applications mobiles, sites web, et plus encore.</p>
+                <p class="hero-subtitle">Sites web, apps mobiles, design créatif et photomanipulation – un service complet pour vos projets uniques.</p>
                 <div class="hero-btns">
                     <a href="#portfolio" class="btn btn-primary">Voir mes réalisations</a>
                     <a href="#contact" class="btn btn-secondary">Discutons de votre projet</a>
@@ -49,17 +65,15 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Mes Services</h2>
-            <div class="services-grid">
-                <!-- Les cartes de services seront générées par JavaScript -->
-            </div>
+            <div class="services-grid"><!-- Généré par JavaScript --></div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="section-title">Mes Réalisations</h2>
@@ -69,45 +83,29 @@
                 <button class="filter-btn" data-filter="app">Apps</button>
                 <button class="filter-btn" data-filter="photomanipulation">Photomanipulation</button>
             </div>
-            <div class="portfolio-grid">
-                <!-- Les éléments du portfolio seront générés par JavaScript -->
-            </div>
+            <div class="portfolio-grid"><!-- Généré par JavaScript --></div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- À propos -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">À Propos</h2>
+            <h2 class="section-title">À propos</h2>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="assets/images/rafl.jpg" alt="RaFl" loading="lazy">
+                    <img src="assets/images/rafl.jpg" alt="Rakotondranivo Flavien – Fondateur de RAFL" loading="lazy">
                 </div>
                 <div class="about-text">
-                    <h3> <strong class="colored-text">RAFL</strong> : mon Univers de Création; de l’idée à la réalisation.</h3>
-                    <p>Je suis <a class="colored-text-link" href="http://rakotondranivo-flavien.netlify.app/"target="_blank" >Rakotondranivo Flavien</a>, passionné par l’imagerie médicale, le design et la technologie.
-                        Manipulateur radio de formation, j’ai élargi mes compétences à la photomanipulation, au développement mobile et à la création de sites web.
-                        J’aime créer, expérimenter et apprendre en continue . Chaque projet est une opportunité d’exprimer ma créativité tout en apportant des solutions concrètes.</p>
-                    <div class="skills">
-                        <!-- Les compétences seront générées par JavaScript -->
-                    </div>
+                    <h3><strong class="colored-text">RAFL</strong> : mon univers créatif, de l’idée à la réalisation.</h3>
+                    <p>Je suis <a class="colored-text-link" href="http://rakotondranivo-flavien.netlify.app/" target="_blank">Rakotondranivo Flavien</a>, manipulateur radio et créateur digital à Madagascar. Passionné par la photomanipulation, le développement mobile et web, je transforme vos idées en projets concrets et innovants.</p>
+                    <div class="skills"><!-- Généré par JavaScript --></div>
                     <a href="#contact" class="btn btn-primary">Travaillons ensemble</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <!--  <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Témoignages</h2>
-            <div class="testimonials-slider">-->
-                <!-- Les témoignages seront générés par JavaScript -->
-           <!-- </div>
-        </div>
-    </section>-->
-
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Contactez-moi</h2>
@@ -120,37 +118,23 @@
                             <p>Vakinankaratra, Madagascar</p>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-envelope" ></i>
-                            <a href="mailto:flavienrado@gmail.com" title="M'ecrire par mail">flavienrado@gmail.com</a>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:flavienrado@gmail.com">flavienrado@gmail.com</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <a href="tel:+261 34 78 000 68">+261 34 78 000 68</a>
+                            <a href="tel:+261347800068">+261 34 78 000 68</a>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/rafl.rado" target="_blank" rel="noopener noreferrer" title="Voir mon profil Facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/radoniaina-flavien-rakotondranivo" target="_blank" rel="noopener noreferrer" title="Voir mon profil LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/rafl_insta/" target="_blank" rel="noopener noreferrer" title="Voir mon profil Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/FlavienRado" target="_blank" rel="noopener noreferrer" title="Voir mon profil GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://comeup.com/fr/@flavien-devweb" target="_blank" rel="noopener noreferrer" title="Mes services sur ComeUp" aria-label="ComeUp"><i class="fas fa-briefcase"></i></a>
+                        <a href="https://www.facebook.com/rafl.rado" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/radoniaina-flavien-rakotondranivo" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/rafl_insta/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/FlavienRado" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://comeup.com/fr/@flavien-devweb" target="_blank" rel="noopener" aria-label="ComeUp"><i class="fas fa-briefcase"></i></a>
                     </div>
                 </div>
-                <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true">
-                    <div class="form-group">
-                        <input type="text" id="name" placeholder="Votre nom" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" placeholder="Votre email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" placeholder="Sujet" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" placeholder="Votre message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                </form>
+               
             </div>
         </div>
     </section>
@@ -160,7 +144,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="assets/images/logo.png" alt="RaFl" class="logo-img">
+                    <img src="assets/images/logo.png" alt="Logo RAFL" class="logo-img">
                     <span class="logo-text">RaFl</span>
                 </div>
                 <p>Solutions digitales sur mesure pour propulser votre business</p>
@@ -173,11 +157,12 @@
                 </ul>
             </div>
             <div class="copyright">
-                <p>&copy; <span id="year"></span>RaFl. Tous droits réservés.</p>
+                <p>&copy; <span id="year"></span> RaFl. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Scripts -->
+    <script src="js/script.js" defer></script>
 </body>
 </html>
