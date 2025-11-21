@@ -85,7 +85,7 @@ const portfolioData = [
         category: 'web',
         title: 'Site Notion en imagerie médicale',
         description: 'Site web interactif pour apprendre les notions en imagerie médicales',
-        url: 'https://flavienrado.github.io/d-clic-imagerie/'
+        url: 'https://imagerie.netlify.app/'
     },
     {    
         image: 'app_mobile.png',
